@@ -1,0 +1,23 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #f5f5f5; padding: 1rem; }
+.app { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.panel { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
+.panel-title { font-size: 16px; font-weight: 500; margin-bottom: 1rem; }
+.meal-label { font-size: 12px; color: #888; margin-bottom: 6px; }
+.meal-name { font-size: 22px; margin-bottom: 4px; }
+.meal-text { font-size: 14px; }
+.ingredients-label { font-size: 12px; color: #888; margin: 8px 0 4px; }
+.ingredient-item { font-size: 13px; color: #666; padding: 2px 0; }
+.divider { border: none; border-top: 1px solid #e0e0e0; margin: 1rem 0; }
+.input-row { display: flex; gap: 8px; margin-bottom: 1rem; }
+.input-row input { flex: 1; font-size: 14px; padding: 6px 10px; border: 1px solid #ddd; border-radius: 8px; outline: none; }
+.input-row input:focus { border-color: #aaa; }
+#add-btn { padding: 6px 14px; font-size: 13px; border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; }
+#add-btn:hover { background: #f5f5f5; }
+#shopping-list { list-style: none; margin-bottom: 1rem; min-height: 40px; }
+#shopping-list li { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+#shopping-list li input[type=checkbox] { cursor: pointer; }
+#shopping-list li.checked span { text-decoration: line-through; color: #bbb; }
+.empty { font-size: 13px; color: #bbb; padding: 8px 0; }
+#clear-btn { font-size: 13px; color: #888; background: none; border: 1px solid #e0e0e0; border-radius: 8px; padding: 4px 12px; cursor: pointer; width: 100%; }
+#clear-btn:hover { background: #f5f5f5; }

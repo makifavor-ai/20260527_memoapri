@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>買い物メモ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="panel">
+        <p class="panel-title">今日の献立</p>
+        <div class="meal-section">
+          <p class="meal-label">朝ごはん</p>
+          <p class="meal-name" id="breakfast-emoji"></p>
+          <p class="meal-text" id="breakfast-name"></p>
+          <div id="breakfast-ingredients"></div>
+        </div>
+        <hr class="divider">
+        <div class="meal-section">
+          <p class="meal-label">夜ごはん</p>
+          <p class="meal-name" id="dinner-emoji"></p>
+          <p class="meal-text" id="dinner-name"></p>
+          <div id="dinner-ingredients"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <p class="panel-title">買い物メモ</p>
+        <div class="input-row">
+          <input type="text" id="item-input" placeholder="例 — 牛乳">
+          <button id="add-btn">追加する</button>
+        </div>
+        <ul id="shopping-list">
+          <li class="empty" id="empty-msg">まだ何も追加されていません</li>
+        </ul>
+        <button id="clear-btn">すべて削除</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
